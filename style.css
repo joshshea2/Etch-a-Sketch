@@ -4,7 +4,95 @@
   box-sizing: border-box;
 }
 
-.container {
-  display: grid;
+.page {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: navy;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 12fr 1fr;
+  grid-template-rows: 4fr 23fr 5fr;
+}
+
+.screenBorder {
+  background-color: maroon;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title {
+  padding: 10px;
+  background-color: maroon;
+  color: gold;
+  font-size: 45px;
+}
+
+/* .dropDown {
+  position: relative;
+  display: inline-block;
+} */
+
+.optionsBtn {
+  color: gold;
+  padding: 10px;
+  border: solid gold;
+  cursor: pointer;
+}
+
+.optionsMenu {
+  padding: 10px;
+  background-color: rgb(247, 247, 6);
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.sizeOption {
+  padding: 5px;
+  display: flex;
+}
+
+.colorsOption {
+  padding: 5px;
+}
+
+.saveImg {
+  padding: 10px;
+  color: gold;
+  border: solid gold;
+  cursor: pointer;
+}
+
+.screen {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(21, 32, 26);
+}
+
+.grid {
+  display: grid;
+  height: 100%;
+}
+
+.leftKnob {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: white;
+  display: inline-block;
+}
+.rightKnob {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: white;
+  display: inline-block;
 }
