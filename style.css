@@ -32,12 +32,8 @@
   background-color: maroon;
   color: gold;
   font-size: 45px;
+  cursor: pointer;
 }
-
-/* .dropDown {
-  position: relative;
-  display: inline-block;
-} */
 
 .optionsBtn {
   color: gold;
