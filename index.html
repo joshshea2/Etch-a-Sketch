@@ -14,23 +14,27 @@
         <div class="screenBorder">
           <div class="title">etch-A-sketch</div>
           <div>
-            <div class="optionsBtn">options</div>
-            <div class="optionsMenu">
-              <div class="sizeOption">
-                size:
-                <input type="number" id="input1" placeholder="min:0 max:200" size="5" />
-                x
-                <input type="number" id="input2" placeholder="min:0 max:200" size="5" />
-                <button class="getInput">save</button>
-              </div>
-              <div class="colorsOption">colors:</div>
-            </div>
+            <button class="optionsBtn">options</button>
           </div>
           <div class="saveImg">save img</div>
         </div>
         <div class="screenBorder"></div>
         <div class="screenBorder"></div>
         <div class="screen">
+          <div class="optionsMenu">
+            <div class="sizeOption">
+              size:
+              <input type="number" id="input1" placeholder="min:0 max:200" size="5" />
+              x
+              <input type="number" id="input2" placeholder="min:0 max:200" size="5" />
+              <button class="getInput">save</button>
+            </div>
+            <div class="colorsOption">colors:</div>
+            <div class="confirmOptions">
+              <button class="confirmBtn1">cancel</button>
+              <button class="confirmBtn2">save changes</button>
+            </div>
+          </div>
           <div class="grid" id="grid"></div>
         </div>
         <div class="screenBorder"></div>

@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: navy;
+  background-color: rgb(77, 77, 79);
 }
 
 .container {
@@ -37,27 +37,45 @@
 
 .optionsBtn {
   color: gold;
+  background-color: transparent;
   padding: 10px;
   border: solid gold;
   cursor: pointer;
 }
 
 .optionsMenu {
+  height: 65%;
+  width: 325px;
   padding: 10px;
   background-color: rgb(247, 247, 6);
   position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   opacity: 0;
   pointer-events: none;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
 }
 
 .sizeOption {
   padding: 5px;
   display: flex;
+  justify-content: center;
+  height: 10%;
 }
 
 .colorsOption {
   padding: 5px;
+  height: 40%;
+}
+
+.confirmOptions {
+  display: flex;
+  height: 30%;
+  justify-content: space-around;
+  align-items: flex-end;
 }
 
 .saveImg {
@@ -71,6 +89,7 @@
   height: 100%;
   width: 100%;
   background-color: rgb(21, 32, 26);
+  position: relative;
 }
 
 .grid {
