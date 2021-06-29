@@ -44,7 +44,7 @@ const game = () => {
   };
   startPoint();
 
-  // hover effect for options menu
+  // options menu
   const dropdownOptions = () => {
     const options = document.querySelector('.optionsBtn');
     const optionsMenu = document.querySelector('.optionsMenu');
@@ -69,37 +69,19 @@ const game = () => {
   };
   dropdownOptions();
 
-  // function to clear current sketch
-  const titleBtn = document.querySelector('.title');
-  const screen = document.querySelector('#grid');
+  // function to clear the current sketch
+  const clearScreen = () => {
+    const titleBtn = document.querySelector('.title');
+    const screen = document.querySelector('#grid');
 
-  const clearScreen = parent => {
-    while (parent.firstChild) {
-      parent.removeChild(parent.firstChild);
-    }
-  };
-
-  // clear current sketch when title is clicked
-  titleBtn.addEventListener('click', () => {
-    clearScreen(screen);
-    generateGrid(columns, rows);
-    startPoint();
-  });
-
-  // clear current sketch && generate new grid from user input
-  const newGrid = () => {
-    let input1 = document.getElementById('input1').value;
-    let input2 = document.getElementById('input2').value;
-    const getInput = document.querySelector('.getInput');
-    columns = input1;
-    rows = input2;
-
-    getInput.addEventListener('click', () => {
-      clearScreen(screen);
+    titleBtn.addEventListener('click', () => {
+      while (screen.firstChild) {
+        screen.removeChild(screen.firstChild);
+      }
       generateGrid(columns, rows);
       startPoint();
     });
   };
-  newGrid();
+  clearScreen();
 };
 game();

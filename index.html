@@ -12,7 +12,7 @@
       <div class="container">
         <div class="screenBorder"></div>
         <div class="screenBorder">
-          <div class="title">etch-A-sketch</div>
+          <button class="title">etch-A-sketch</button>
           <div>
             <button class="optionsBtn">options</button>
           </div>
@@ -22,14 +22,24 @@
         <div class="screenBorder"></div>
         <div class="screen">
           <div class="optionsMenu">
-            <div class="sizeOption">
-              size:
-              <input type="number" id="input1" placeholder="min:0 max:200" size="5" />
-              x
-              <input type="number" id="input2" placeholder="min:0 max:200" size="5" />
-              <button class="getInput">save</button>
-            </div>
-            <div class="colorsOption">colors:</div>
+            <form class="sizeOption">
+              <h3>size</h3>
+              <input type="radio" id="input1" name="sizes" />
+              <label for="input1">16x34 (default)</label><br />
+              <input type="radio" id="input2" name="sizes" />
+              <label for="input2">60x90</label><br />
+              <input type="radio" id="input3" name="sizes" />
+              <label for="input3">16x9</label><br />
+              <input type="radio" id="input4" name="sizes" />
+              <label for="input4">number x number</label>
+            </form>
+            <form class="colorsOption">
+              <h3>colors</h3>
+              <label for="pixelColor">line color</label>
+              <input type="color" name="colors" id="pixelColor" /><br />
+              <label for="screenColor">screen color</label>
+              <input type="color" name="colors" id="screenColor" />
+            </form>
             <div class="confirmOptions">
               <button class="confirmBtn1">cancel</button>
               <button class="confirmBtn2">save changes</button>

@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(77, 77, 79);
+  background-color: rgb(227, 227, 243);
 }
 
 .container {
@@ -29,10 +29,11 @@
 
 .title {
   padding: 10px;
-  background-color: maroon;
+  background-color: transparent;
   color: gold;
   font-size: 45px;
   cursor: pointer;
+  border: solid gold;
 }
 
 .optionsBtn {
@@ -44,7 +45,7 @@
 }
 
 .optionsMenu {
-  height: 65%;
+  height: 40%;
   width: 325px;
   padding: 10px;
   background-color: rgb(247, 247, 6);
@@ -61,9 +62,8 @@
 
 .sizeOption {
   padding: 5px;
-  display: flex;
-  justify-content: center;
-  height: 10%;
+
+  height: 40%;
 }
 
 .colorsOption {
@@ -73,7 +73,7 @@
 
 .confirmOptions {
   display: flex;
-  height: 30%;
+  height: 20%;
   justify-content: space-around;
   align-items: flex-end;
 }
@@ -88,7 +88,7 @@
 .screen {
   height: 100%;
   width: 100%;
-  background-color: rgb(21, 32, 26);
+  background-color: rgb(180, 189, 184);
   position: relative;
 }
 
